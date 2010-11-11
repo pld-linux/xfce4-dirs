@@ -26,7 +26,6 @@ install -d \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4 \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4/modules \
 	$RPM_BUILD_ROOT%{_datadir}/xfce4 \
-	$RPM_BUILD_ROOT%{_datadir}/xfce4/helpers \
 	$RPM_BUILD_ROOT%{_xfce4docdir}/{C,ast,ca,da,es,fr,gl,id,it,ja,pt,pt_BR,tr,zh_CN}/images \
 
 %clean
@@ -38,7 +37,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/xfce4
 %dir %{_libdir}/xfce4/modules
 %dir %{_datadir}/xfce4
-%dir %{_datadir}/xfce4/helpers
 %dir %{_xfce4docdir}
 %dir %{_xfce4docdir}/C
 %dir %{_xfce4docdir}/C/images
