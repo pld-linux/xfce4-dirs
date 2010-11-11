@@ -3,7 +3,7 @@ Summary:	Xfce4 - common directories
 Summary(pl.UTF-8):	Wspólne katalogi Xfce4
 Name:		xfce4-dirs
 Version:	4.6
-Release:	1
+Release:	2
 License:	LGPL
 Group:		X11/Libraries
 URL:		http://www.xfce.org/
@@ -22,6 +22,7 @@ Katalogi wspólne dla Xfce4.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d \
+	$RPM_BUILD_ROOT%{_sysconfdir}/xdg/xfce4 \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4 \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4/modules \
 	$RPM_BUILD_ROOT%{_datadir}/xfce4 \
@@ -32,6 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{_sysconfdir}/xdg/xfce4
 %dir %{_libdir}/xfce4
 %dir %{_libdir}/xfce4/modules
 %dir %{_datadir}/xfce4
