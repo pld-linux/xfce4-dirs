@@ -3,7 +3,7 @@ Summary:	Xfce4 - common directories
 Summary(pl.UTF-8):	Wspólne katalogi Xfce4
 Name:		xfce4-dirs
 Version:	4.6
-Release:	2
+Release:	3
 License:	LGPL
 Group:		X11/Libraries
 URL:		http://www.xfce.org/
@@ -26,7 +26,7 @@ install -d \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4 \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4/modules \
 	$RPM_BUILD_ROOT%{_datadir}/xfce4 \
-	$RPM_BUILD_ROOT%{_xfce4docdir}/{C,ast,ca,da,es,fr,gl,id,it,ja,pt,pt_BR,tr,zh_CN}/images \
+	$RPM_BUILD_ROOT%{_xfce4docdir}/{C,am,ast,ca,da,es,fr,gl,id,it,ja,pt,pt_BR,tr,ug,zh_CN}/images \
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -40,6 +40,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_xfce4docdir}
 %dir %{_xfce4docdir}/C
 %dir %{_xfce4docdir}/C/images
+%lang(am) %dir %{_xfce4docdir}/am
+%lang(am) %dir %{_xfce4docdir}/am/images
 %lang(ast) %dir %{_xfce4docdir}/ast
 %lang(ast) %dir %{_xfce4docdir}/ast/images
 %lang(ca) %dir %{_xfce4docdir}/ca
@@ -64,5 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %lang(pt_BR) %dir %{_xfce4docdir}/pt_BR/images
 %lang(tr) %dir %{_xfce4docdir}/tr
 %lang(tr) %dir %{_xfce4docdir}/tr/images
+%lang(ug) %dir %{_xfce4docdir}/ug
+%lang(ug) %dir %{_xfce4docdir}/ug/images
 %lang(zh_CN) %dir %{_xfce4docdir}/zh_CN
 %lang(zn_CN) %dir %{_xfce4docdir}/zh_CN/images
