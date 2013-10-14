@@ -3,7 +3,7 @@ Summary:	Xfce4 - common directories
 Summary(pl.UTF-8):	Wspólne katalogi Xfce4
 Name:		xfce4-dirs
 Version:	4.6
-Release:	3
+Release:	4
 License:	LGPL
 Group:		X11/Libraries
 URL:		http://www.xfce.org/
@@ -26,6 +26,7 @@ install -d \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4 \
 	$RPM_BUILD_ROOT%{_libdir}/xfce4/modules \
 	$RPM_BUILD_ROOT%{_datadir}/xfce4 \
+	$RPM_BUILD_ROOT%{_datadir}/Thunar/sendto \
 	$RPM_BUILD_ROOT%{_xfce4docdir}/{C,am,ast,ca,da,es,fr,gl,id,it,ja,pt,pt_BR,tr,ug,zh_CN}/images \
 
 %clean
@@ -37,6 +38,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/xfce4
 %dir %{_libdir}/xfce4/modules
 %dir %{_datadir}/xfce4
+%dir %{_datadir}/Thunar
+%dir %{_datadir}/Thunar/sendto
 %dir %{_xfce4docdir}
 %dir %{_xfce4docdir}/C
 %dir %{_xfce4docdir}/C/images
