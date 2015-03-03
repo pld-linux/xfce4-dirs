@@ -3,7 +3,7 @@ Summary:	Xfce4 - common directories
 Summary(pl.UTF-8):	Wspólne katalogi Xfce4
 Name:		xfce4-dirs
 Version:	4.6
-Release:	4
+Release:	5
 License:	LGPL
 Group:		X11/Libraries
 URL:		http://www.xfce.org/
